@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DA300299207BDB4700F5FF07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA300298207BDB4700F5FF07 /* AppDelegate.swift */; };
-		DA30029B207BDB4700F5FF07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA30029A207BDB4700F5FF07 /* ViewController.swift */; };
-		DA30029E207BDB4700F5FF07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA30029C207BDB4700F5FF07 /* Main.storyboard */; };
+		DA30029B207BDB4700F5FF07 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA30029A207BDB4700F5FF07 /* FriendsViewController.swift */; };
 		DA3002A1207BDB4700F5FF07 /* MessangerApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA30029F207BDB4700F5FF07 /* MessangerApp.xcdatamodeld */; };
 		DA3002A3207BDB4800F5FF07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3002A2207BDB4800F5FF07 /* Assets.xcassets */; };
 		DA3002A6207BDB4800F5FF07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA3002A4207BDB4800F5FF07 /* LaunchScreen.storyboard */; };
@@ -18,8 +17,7 @@
 /* Begin PBXFileReference section */
 		DA300295207BDB4700F5FF07 /* MessangerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessangerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA300298207BDB4700F5FF07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DA30029A207BDB4700F5FF07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DA30029D207BDB4700F5FF07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA30029A207BDB4700F5FF07 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		DA3002A0207BDB4700F5FF07 /* MessangerApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MessangerApp.xcdatamodel; sourceTree = "<group>"; };
 		DA3002A2207BDB4800F5FF07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA3002A5207BDB4800F5FF07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,8 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				DA300298207BDB4700F5FF07 /* AppDelegate.swift */,
-				DA30029A207BDB4700F5FF07 /* ViewController.swift */,
-				DA30029C207BDB4700F5FF07 /* Main.storyboard */,
+				DA30029A207BDB4700F5FF07 /* FriendsViewController.swift */,
 				DA3002A2207BDB4800F5FF07 /* Assets.xcassets */,
 				DA3002A4207BDB4800F5FF07 /* LaunchScreen.storyboard */,
 				DA3002A7207BDB4800F5FF07 /* Info.plist */,
@@ -127,7 +124,6 @@
 			files = (
 				DA3002A6207BDB4800F5FF07 /* LaunchScreen.storyboard in Resources */,
 				DA3002A3207BDB4800F5FF07 /* Assets.xcassets in Resources */,
-				DA30029E207BDB4700F5FF07 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA3002A1207BDB4700F5FF07 /* MessangerApp.xcdatamodeld in Sources */,
-				DA30029B207BDB4700F5FF07 /* ViewController.swift in Sources */,
+				DA30029B207BDB4700F5FF07 /* FriendsViewController.swift in Sources */,
 				DA300299207BDB4700F5FF07 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +143,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DA30029C207BDB4700F5FF07 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DA30029D207BDB4700F5FF07 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DA3002A4207BDB4800F5FF07 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
