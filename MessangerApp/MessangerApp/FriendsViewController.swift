@@ -14,8 +14,8 @@ class FriendsViewController: UICollectionViewController, UICollectionViewDelegat
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		
-		collectionView?.backgroundColor = UIColor.green
+		navigationItem.title = "Recent"
+		collectionView?.backgroundColor = UIColor.white
 		collectionView?.alwaysBounceVertical = true
 		
 		collectionView?.register(FriendCell.self , forCellWithReuseIdentifier: cellID)
@@ -45,17 +45,41 @@ class FriendCell: BaseCell {
 		return imageView
 	}()
 	
+	let dividerLineView: UIView = {
+		let lineView = UIView()
+		lineView.backgroundColor = UIColor(white: 0.5, alpha: 0.5)
+		return lineView
+	}()
+	
 	override func setupCell() {
-		self.backgroundColor = UIColor.red
 		
 		self.addSubview(profileImageView)
+		self.addSubview(dividerLineView)
 		profileImageView.translatesAutoresizingMaskIntoConstraints = false
+		dividerLineView.translatesAutoresizingMaskIntoConstraints = false
 		profileImageView.layer.masksToBounds = true
 		profileImageView.layer.cornerRadius = 34
-		addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-12-[v0(68)]", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0": profileImageView]))
-		
-		addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-12-[v0(68)]", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0": profileImageView]))
 
+		addConstraintsWithVisualFormat(format: "H:|-12-[v0(68)]", views: profileImageView)
+		addConstraintsWithVisualFormat(format: "V:|-12-[v0(68)]", views: profileImageView)
+		
+		addConstraintsWithVisualFormat(format: "H:|-86-[v0]|", views: dividerLineView)
+		addConstraintsWithVisualFormat(format: "V:[v0(1)]|", views: dividerLineView)
+
+	}
+}
+
+extension UIView {
+	func addConstraintsWithVisualFormat(format: String, views: UIView...) {
+		
+		var viewsDictionary = [String: UIView]()
+		for (index, view) in views.enumerated() {
+			let key = "v\(index)"
+			viewsDictionary[key] = view
+			view.translatesAutoresizingMaskIntoConstraints = false
+		}
+		
+		addConstraints(NSLayoutConstraint.constraints(withVisualFormat: format, options: NSLayoutFormatOptions(), metrics: nil, views: viewsDictionary))
 	}
 }
 
