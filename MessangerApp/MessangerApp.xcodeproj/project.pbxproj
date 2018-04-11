@@ -12,6 +12,7 @@
 		DA3002A1207BDB4700F5FF07 /* MessangerApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA30029F207BDB4700F5FF07 /* MessangerApp.xcdatamodeld */; };
 		DA3002A3207BDB4800F5FF07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3002A2207BDB4800F5FF07 /* Assets.xcassets */; };
 		DA3002A6207BDB4800F5FF07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA3002A4207BDB4800F5FF07 /* LaunchScreen.storyboard */; };
+		DA530E49207E7B5A00DC3C17 /* FriendsControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA530E48207E7B5A00DC3C17 /* FriendsControllerHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		DA3002A2207BDB4800F5FF07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA3002A5207BDB4800F5FF07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA3002A7207BDB4800F5FF07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA530E48207E7B5A00DC3C17 /* FriendsControllerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsControllerHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				DA300298207BDB4700F5FF07 /* AppDelegate.swift */,
 				DA30029A207BDB4700F5FF07 /* FriendsViewController.swift */,
+				DA530E48207E7B5A00DC3C17 /* FriendsControllerHelper.swift */,
 				DA3002A2207BDB4800F5FF07 /* Assets.xcassets */,
 				DA3002A4207BDB4800F5FF07 /* LaunchScreen.storyboard */,
 				DA3002A7207BDB4800F5FF07 /* Info.plist */,
@@ -137,6 +140,7 @@
 				DA3002A1207BDB4700F5FF07 /* MessangerApp.xcdatamodeld in Sources */,
 				DA30029B207BDB4700F5FF07 /* FriendsViewController.swift in Sources */,
 				DA300299207BDB4700F5FF07 /* AppDelegate.swift in Sources */,
+				DA530E49207E7B5A00DC3C17 /* FriendsControllerHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
